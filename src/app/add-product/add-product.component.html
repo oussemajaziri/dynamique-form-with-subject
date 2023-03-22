@@ -1,0 +1,16 @@
+
+<div>
+    <form>
+        <div>
+            <label >Nom du produit</label>
+            <input type="text" [(ngModel)]="product" [ngModelOptions]="{standalone: true}" #prod>
+        </div>
+   
+        <div>
+            <button (click)="goToCategory()">Categorie du produit</button>
+        </div>
+        <div>
+            <button (click)="addProduct(prod.value)">Ajouter</button>
+        </div>
+    </form>
+</div>

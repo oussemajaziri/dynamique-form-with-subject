@@ -1,0 +1,6 @@
+<select [(ngModel)]="category">
+    <option value="" disabled selected>Choisir une catégorie</option>
+    <option *ngFor="let cat of categories" [value]="cat">{{cat}}</option>
+</select>
+
+<button (click)="back()">ok</button>
